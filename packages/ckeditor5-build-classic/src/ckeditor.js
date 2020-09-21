@@ -32,6 +32,7 @@ import TableToolbar from "@ckeditor/ckeditor5-table/src/tabletoolbar";
 
 import Base64UploadAdapter from "@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter";
 import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
+import Font from "@ckeditor/ckeditor5-font/src/font";
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -62,6 +63,7 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	Base64UploadAdapter,
+	Font,
 ];
 
 // Editor configuration.
@@ -88,6 +90,10 @@ ClassicEditor.defaultConfig = {
 			"mediaEmbed",
 			"undo",
 			"redo",
+			"fontSize",
+			"fontFamily",
+			"fontColor",
+			"fontBackgroundColor",
 		],
 	},
 	image: {
